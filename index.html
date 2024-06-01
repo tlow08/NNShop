@@ -11,7 +11,9 @@
     />
   </head>
   <body>
-    <section class="container max-w-screen-xl m-auto flex items-center justify-between py-4">
+    <section
+      class="container max-w-screen-xl m-auto flex items-center justify-between py-4"
+    >
       <img src="./assets/images/logo.png" alt="" />
       <ul class="flex gap-8 font-medium text-xl">
         <li class="hover:text-amber-500">
@@ -27,7 +29,7 @@
           <a href="">Contact</a>
         </li>
       </ul>
-      <div class="flex gap-4 ">
+      <div class="flex gap-4">
         <span class="material-symbols-outlined"> person </span>
         <span class="material-symbols-outlined"> search </span>
         <span class="material-symbols-outlined"> favorite </span>
@@ -36,44 +38,348 @@
     </section>
     <!-- End Navigation Bar -->
     <section>
-      <img class="w-full" src="./assets/images/banner.jpg" alt="">
+      <img class="w-full" src="./assets/images/banner.jpg" alt="" />
     </section>
     <!-- End banner -->
     <section class="container max-w-screen-xl m-auto mt-16">
       <div class="flex justify-between items-center mb-4">
         <h2 class="font-semibold text-[40px]">New Products</h2>
-        <a href="" class="border border-solid border-yellow-500 px-4 py-2 font-semibold text-base text-yellow-500">View all products</a>
+        <a
+          href=""
+          class="border border-solid border-yellow-500 px-4 py-2 font-semibold text-base text-yellow-500 hover:bg-yellow-600 hover:text-white"
+          >View all products</a
+        >
       </div>
-      <div>
+      <div class="grid grid-cols-4 gap-8">
         <div>
-          <img src="./assets/images/product01.jpg" alt="">
-          <h3>Syltherine</h3>
-          <p>Stylish cafe chair</p>
-          <p>2.500.000đ</p>
-          <button>Add to cart</button>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/product01.jpg"
+              alt=""
+            />
+          </div>
+          <div class="bg-[#F5F5F5] p-4">
+            <h3 class="font-semibold text-xl">Syltherine</h3>
+            <p class="text-[#898989] mt-1 mb-2">Stylish cafe chair</p>
+            <p class="font-semibold text-red-600 mb-3">2.500.000đ</p>
+            <button
+              class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
         <div>
-          <img src="./assets/images/product01.jpg" alt="">
-          <h3>Syltherine</h3>
-          <p>Stylish cafe chair</p>
-          <p>2.500.000đ</p>
-          <button>Add to cart</button>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/product02.jpg"
+              alt=""
+            />
+          </div>
+          <div class="bg-[#F5F5F5] p-4">
+            <h3 class="font-semibold text-xl">Leviosa</h3>
+            <p class="text-[#898989] mt-1 mb-2">Stylish cafe chair</p>
+            <p class="font-semibold text-red-600 mb-3">2.500.000đ</p>
+            <button
+              class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
         <div>
-          <img src="./assets/images/product01.jpg" alt="">
-          <h3>Syltherine</h3>
-          <p>Stylish cafe chair</p>
-          <p>2.500.000đ</p>
-          <button>Add to cart</button>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/product03.jpg"
+              alt=""
+            />
+          </div>
+          <div class="bg-[#F5F5F5] p-4">
+            <h3 class="font-semibold text-xl">Syltherine</h3>
+            <p class="text-[#898989] mt-1 mb-2">Stylish cafe chair</p>
+            <p class="font-semibold text-red-600 mb-3">2.500.000đ</p>
+            <button
+              class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
         <div>
-          <img src="./assets/images/product01.jpg" alt="">
-          <h3>Syltherine</h3>
-          <p>Stylish cafe chair</p>
-          <p>2.500.000đ</p>
-          <button>Add to cart</button>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/product04.jpg"
+              alt=""
+            />
+          </div>
+          <div class="bg-[#F5F5F5] p-4">
+            <h3 class="font-semibold text-xl">Respira</h3>
+            <p class="text-[#898989] mt-1 mb-2">Outdoor bar table and stool</p>
+            <p class="font-semibold text-red-600 mb-3">4.500.000đ</p>
+            <button
+              class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End new product -->
+    <section class="container max-w-screen-xl m-auto mt-16">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="font-semibold text-[40px]">Gallery</h2>
+        <a
+          href=""
+          class="border border-solid border-yellow-500 px-4 py-2 font-semibold text-base text-yellow-500 hover:bg-yellow-600 hover:text-white"
+          >View all gallery</a
+        >
+      </div>
+      <div class="grid grid-cols-3 gap-8">
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-125 duration-1000"
+            src="./assets/images/gallery01.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-125 duration-1000"
+            src="./assets/images/gallery02.png"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-125 duration-1000"
+            src="./assets/images/gallery03.png"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-125 duration-1000"
+            src="./assets/images/gallery04.png"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-125 duration-1000"
+            src="./assets/images/gallery05.png"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-125 duration-1000"
+            src="./assets/images/gallery06.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End gallery -->
+    <section class="container max-w-screen-xl m-auto mt-16">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="font-semibold text-[40px]">News</h2>
+        <a
+          href=""
+          class="border border-solid border-yellow-500 px-4 py-2 font-semibold text-base text-yellow-500 hover:bg-yellow-600 hover:text-white"
+          >View all news</a
+        >
+      </div>
+      <div class="grid grid-cols-4 gap-8">
+        <div>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/news01.jpg"
+              alt=""
+            />
+          </div>
+          <div class="overflow-hidden">
+            <p class="flex mt-4 mb-1 text-[#9CA3AF]">
+              <span class="material-symbols-outlined"> calendar_month </span>
+              24/04/2024
+            </p>
+            <h3
+              class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+            >
+              A bedroom must have something like this
+            </h3>
+            <a
+              class="flex text-[#EF4444] font-semibold text-base gap-2 py-[5px] hover:font-bold"
+              href=""
+              >Xem chi tiết
+              <span class="material-symbols-outlined"> arrow_forward </span></a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/news01.jpg"
+              alt=""
+            />
+          </div>
+          <div class="overflow-hidden">
+            <p class="flex mt-4 mb-1 text-[#9CA3AF]">
+              <span class="material-symbols-outlined"> calendar_month </span>
+              24/04/2024
+            </p>
+            <h3
+              class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+            >
+              A bedroom must have something like this
+            </h3>
+            <a
+              class="flex text-[#EF4444] font-semibold text-base gap-2 py-[5px] hover:font-bold"
+              href=""
+              >Xem chi tiết
+              <span class="material-symbols-outlined"> arrow_forward </span></a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/news01.jpg"
+              alt=""
+            />
+          </div>
+          <div class="overflow-hidden">
+            <p class="flex mt-4 mb-1 text-[#9CA3AF]">
+              <span class="material-symbols-outlined"> calendar_month </span>
+              24/04/2024
+            </p>
+            <h3
+              class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+            >
+              A bedroom must have something like this
+            </h3>
+            <a
+              class="flex text-[#EF4444] font-semibold text-base gap-2 py-[5px] hover:font-bold"
+              href=""
+              >Xem chi tiết
+              <span class="material-symbols-outlined"> arrow_forward </span></a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="overflow-hidden">
+            <img
+              class="hover:scale-125 duration-1000"
+              src="./assets/images/news01.jpg"
+              alt=""
+            />
+          </div>
+          <div class="overflow-hidden">
+            <p class="flex mt-4 mb-1 text-[#9CA3AF]">
+              <span class="material-symbols-outlined"> calendar_month </span>
+              24/04/2024
+            </p>
+            <h3
+              class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+            >
+              A bedroom must have something like this
+            </h3>
+            <a
+              class="flex text-[#EF4444] font-semibold text-base gap-2 py-[5px] hover:font-bold"
+              href=""
+              >Xem chi tiết
+              <span class="material-symbols-outlined"> arrow_forward </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End news -->
+    <section class="bg-[#FFF7ED]">
+      <div
+        class="container max-w-screen-xl m-auto mt-16 py-12 grid grid-cols-4 gap-8"
+      >
+        <div class="flex">
+          <div class="flex items-center py-[7px] pr-[10px] pb-1">
+            <img src="./assets/images/icon01.svg" alt="" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-[#262626] text-xl">High Quality</h3>
+            <p class="text-base text-[#898989]">Crafted from top materials</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex items-center py-[7px] pr-[10px] pb-1">
+            <img src="./assets/images/icon02.png" alt="" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-[#262626] text-xl">High Quality</h3>
+            <p class="text-base text-[#898989]">Crafted from top materials</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex items-center py-[7px] pr-[10px] pb-1">
+            <img src="./assets/images/icon03.png" alt="" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-[#262626] text-xl">High Quality</h3>
+            <p class="text-base text-[#898989]">Crafted from top materials</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex items-center py-[7px] pr-[10px] pb-1">
+            <img src="./assets/images/icon04.png" alt="" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-[#262626] text-xl">High Quality</h3>
+            <p class="text-base text-[#898989]">Crafted from top materials</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Icon -->
+    <footer class="bg-[#262626] text-white ">
+        <div class="container max-w-screen-xl m-auto py-16 grid grid-cols-4  gap-8">
+          <div>
+            <img src="./assets/images/logo02.svg" alt="" />
+            <p class="text-base pt-4">
+              400 University Drive Suite 200 Coral Gables,FL 33134 USA
+            </p>
+          </div>
+          <div>
+            <p class="text-xl mb-4">Sitemap</p>
+            <a href="" class="block text-base mb-2">Home</a>
+            <a href="" class="text-base block mb-2">Shop</a>
+            <a href="" class="text-base block mb-2">About</a>
+            <a href="" class="text-base block mb-2">Contact</a>
+          </div>
+          <div>
+            <p class="text-xl mb-4">Help</p>
+            <a class="text-base block mb-2">Payment Options</a>
+            <a class="text-base block mb-2">Returns</a>
+            <a class="text-base block mb-2">Privacy Policies</a>
+          </div>
+          <div>
+            <p class="text-xl mb-4">Location</p>
+            <p class="text-base block mb-2">support@euphoris.in</p>
+            <p class="text-base block mb-2">Ahmedabad Main Road</p>
+            <p class="text-base block mb-2">Udaipur, India-313002</p>
+          </div>
+        </div>
+
+        <div class="container max-w-screen-xl m-auto text-center">
+          <hr />
+          <p class="p-8">
+            Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+          </p>
+        </div>
+    </footer>
   </body>
 </html>
