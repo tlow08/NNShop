@@ -682,28 +682,12 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[20px\] {
-  margin-top: 20px;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[1\] {
-  margin-top: 1;
-}
-
-.mt-\[11\] {
-  margin-top: 11;
-}
-
-.mt-\[11p\] {
-  margin-top: 11p;
-}
-
 .mt-\[11px\] {
   margin-top: 11px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
 }
 
 .block {
@@ -870,11 +854,6 @@ video {
   border-width: 1px;
 }
 
-.border-y {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-}
-
 .border-l {
   border-left-width: 1px;
 }
@@ -954,6 +933,11 @@ video {
   padding: 7px;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -997,36 +981,6 @@ video {
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 .pb-1 {
@@ -1211,10 +1165,6 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
-
 .duration-1000 {
   transition-duration: 1000ms;
 }
@@ -1243,10 +1193,6 @@ video {
 .hover\:bg-yellow-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(161 98 7 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\]:hover {
-  background-color: ;
 }
 
 .hover\:font-bold:hover {

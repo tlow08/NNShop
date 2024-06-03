@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <section
+    <header
       class="container max-w-screen-xl m-auto flex items-center justify-between py-4"
     >
       <img src="./assets/images/logo.png" alt="" />
@@ -36,18 +36,46 @@
         <span class="material-symbols-outlined"> favorite </span>
         <span class="material-symbols-outlined"> shopping_cart </span>
       </div>
-    </section>
-    <section class="container max-w-screen-xl m-auto mt-16">
-      <div><p class="font-bold text-[40px] mb-8">Billing details</p></div>
-
-      <form class="grid grid-cols-2 gap-8" action="">
-        <div>
-          <div class="grid grid-cols-2 gap-8 mb-8">
+    </header>
+    <main>
+      <section class="container max-w-screen-xl m-auto mt-16">
+        <div><p class="font-bold text-[40px] mb-8">Billing details</p></div>
+  
+        <form class="grid grid-cols-2 gap-8" action="">
+          <div>
+            <div class="grid grid-cols-2 gap-8 mb-8">
+              <div class="flex flex-wrap">
+                <label
+                  class="w-full text-[#262626] font-medium text-base mb-2"
+                  for=""
+                  >First Name</label
+                >
+                <input
+                  class="w-full border border-gray-500 h-[40px]"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="flex flex-wrap">
+                <label
+                  class="w-full text-[#262626] font-medium text-base mb-2"
+                  for=""
+                  >Last Name</label
+                >
+                <input
+                  class="w-full border border-gray-500 h-[40px]"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
             <div class="flex flex-wrap">
               <label
                 class="w-full text-[#262626] font-medium text-base mb-2"
                 for=""
-                >First Name</label
+                >Company Name (Optional)</label
               >
               <input
                 class="w-full border border-gray-500 h-[40px]"
@@ -56,11 +84,27 @@
                 id=""
               />
             </div>
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap mt-8">
               <label
                 class="w-full text-[#262626] font-medium text-base mb-2"
                 for=""
-                >Last Name</label
+                >Country / Region</label
+              >
+              <select
+                class="w-full border border-gray-500 h-[40px] justify-center items-center pl-4 text-[#A3A3A3]"
+                name=""
+                id=""
+              >
+                <option value="0">
+                  <p class="pl-4 text-sm font-normal">Sri Lanka</p>
+                </option>
+              </select>
+            </div>
+            <div class="flex flex-wrap mt-8">
+              <label
+                class="w-full text-[#262626] font-medium text-base mb-2"
+                for=""
+                >Street address</label
               >
               <input
                 class="w-full border border-gray-500 h-[40px]"
@@ -69,166 +113,124 @@
                 id=""
               />
             </div>
-          </div>
-          <div class="flex flex-wrap">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >Company Name (Optional)</label
-            >
-            <input
-              class="w-full border border-gray-500 h-[40px]"
-              type="text"
-              name=""
-              id=""
-            />
-          </div>
-          <div class="flex flex-wrap mt-8">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >Country / Region</label
-            >
-            <select
-              class="w-full border border-gray-500 h-[40px] justify-center items-center pl-4 text-[#A3A3A3]"
-              name=""
-              id=""
-            >
-              <option value="0">
-                <p class="pl-4 text-sm font-normal">Sri Lanka</p>
-              </option>
-            </select>
-          </div>
-          <div class="flex flex-wrap mt-8">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >Street address</label
-            >
-            <input
-              class="w-full border border-gray-500 h-[40px]"
-              type="text"
-              name=""
-              id=""
-            />
-          </div>
-          <div class="flex flex-wrap mt-8">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >Town / City</label
-            >
-            <input
-              class="w-full border border-gray-500 h-[40px]"
-              type="text"
-              name=""
-              id=""
-            />
-          </div>
-          <div class="flex flex-wrap mt-8">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >Province</label
-            >
-            <select
-              class="w-full border border-gray-500 h-[40px] justify-center items-center pl-4 text-[#A3A3A3]"
-              name=""
-              id=""
-            >
-              <option value="0">
-                <p class="text-sm font-normal">Western Province</p>
-              </option>
-            </select>
-          </div>
-          <div class="flex flex-wrap mt-8">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >ZIP code</label
-            >
-            <input
-              class="w-full border border-gray-500 h-[40px]"
-              type="text"
-              name=""
-              id=""
-            />
-          </div>
-          <div class="flex flex-wrap mt-8">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >Phone</label
-            >
-            <input
-              class="w-full border border-gray-500 h-[40px]"
-              type="text"
-              name=""
-              id=""
-            />
-          </div>
-          <div class="flex flex-wrap mt-8 mb-16">
-            <label
-              class="w-full text-[#262626] font-medium text-base mb-2"
-              for=""
-              >Email address</label
-            >
-            <input class="w-full border border-gray-500 h-[40px]" type="text" />
-          </div>
-        </div>
-        <div>
-          <div class="flex justify-between text-2xl font-semibold">
-            <p>Product</p>
-            <p>Subtotal</p>
-          </div>
-          <div class="flex justify-between mt-3">
-            <div class="flex gap-3">
-              <p class="text-[#A3A3A3] text-base">Asgaard sofa</p>
-              <p class="text-base font-medium">X1</p>
+            <div class="flex flex-wrap mt-8">
+              <label
+                class="w-full text-[#262626] font-medium text-base mb-2"
+                for=""
+                >Town / City</label
+              >
+              <input
+                class="w-full border border-gray-500 h-[40px]"
+                type="text"
+                name=""
+                id=""
+              />
             </div>
-            <p class="text-base font-medium">25.000.000đ</p>
+            <div class="flex flex-wrap mt-8">
+              <label
+                class="w-full text-[#262626] font-medium text-base mb-2"
+                for=""
+                >Province</label
+              >
+              <select
+                class="w-full border border-gray-500 h-[40px] justify-center items-center pl-4 text-[#A3A3A3]"
+                name=""
+                id=""
+              >
+                <option value="0">
+                  <p class="text-sm font-normal">Western Province</p>
+                </option>
+              </select>
+            </div>
+            <div class="flex flex-wrap mt-8">
+              <label
+                class="w-full text-[#262626] font-medium text-base mb-2"
+                for=""
+                >ZIP code</label
+              >
+              <input
+                class="w-full border border-gray-500 h-[40px]"
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="flex flex-wrap mt-8">
+              <label
+                class="w-full text-[#262626] font-medium text-base mb-2"
+                for=""
+                >Phone</label
+              >
+              <input
+                class="w-full border border-gray-500 h-[40px]"
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="flex flex-wrap mt-8 mb-16">
+              <label
+                class="w-full text-[#262626] font-medium text-base mb-2"
+                for=""
+                >Email address</label
+              >
+              <input class="w-full border border-gray-500 h-[40px]" type="text" />
+            </div>
           </div>
-          <div class="flex justify-between mt-3 text-base font-medium">
-            <p>Subtotal</p>
-            <p>25.000.000đ</p>
-          </div>
-          <div class="flex justify-between mt-3">
-            <p class="text-base font-medium">Total</p>
-            <p class="text-xl font-bold text-[#B88E2F]">250.00.000đ</p>
-          </div>
-          <hr class="my-8" />
           <div>
-            <a class="flex items-center" href="">
-              <p class="pr-[5px] h-3 w-3 border border-gray-500 text-left rounded-full mr-2 hover:bg-black"></p>
-              <p class="hover:text-[black] font-medium text-base text-[#A3A3A3]">Direct Bank Transfer</p>
-            </a>
-            <p class="text-[#A3A3A3] text-base mb-4 mt-[11px] font-normal">
-              Make your payment directly into our bank account. Please use your
-              Order ID as the payment reference. Your order will not be shipped
-              until the funds have cleared in our account.
-            </p>
-            <a class="flex items-center"  href="">
-              <p class="pr-[5px] h-3 w-3 border border-gray-500 text-left rounded-full mr-2 hover:bg-black"></p>
-              <p class="hover:text-[black] font-medium text-base text-[#A3A3A3]">Direct Bank Transfer</p>
-            </a>
-            <a class="flex items-center" href="">
-              <p class="pr-[5px] h-3 w-3 border border-gray-500 text-left rounded-full mr-2 hover:bg-black"></p>
-              <p class="hover:text-[black] font-medium text-base text-[#A3A3A3]">Cash On Delivery</p>
-            </a>
+            <div class="flex justify-between text-2xl font-semibold">
+              <p>Product</p>
+              <p>Subtotal</p>
+            </div>
+            <div class="flex justify-between mt-3">
+              <div class="flex gap-3">
+                <p class="text-[#A3A3A3] text-base">Asgaard sofa</p>
+                <p class="text-base font-medium">X1</p>
+              </div>
+              <p class="text-base font-medium">25.000.000đ</p>
+            </div>
+            <div class="flex justify-between mt-3 text-base font-medium">
+              <p>Subtotal</p>
+              <p>25.000.000đ</p>
+            </div>
+            <div class="flex justify-between mt-3">
+              <p class="text-base font-medium">Total</p>
+              <p class="text-xl font-bold text-[#B88E2F]">250.00.000đ</p>
+            </div>
+            <hr class="my-8" />
+            <div>
+              <a class="flex items-center" href="">
+                <p class="pr-[5px] h-3 w-3 border border-gray-500 text-left rounded-full mr-2 hover:bg-black"></p>
+                <p class="hover:text-[black] font-medium text-base text-[#A3A3A3]">Direct Bank Transfer</p>
+              </a>
+              <p class="text-[#A3A3A3] text-base mb-4 mt-[11px] font-normal">
+                Make your payment directly into our bank account. Please use your
+                Order ID as the payment reference. Your order will not be shipped
+                until the funds have cleared in our account.
+              </p>
+              <a class="flex items-center"  href="">
+                <p class="pr-[5px] h-3 w-3 border border-gray-500 text-left rounded-full mr-2 hover:bg-black"></p>
+                <p class="hover:text-[black] font-medium text-base text-[#A3A3A3]">Direct Bank Transfer</p>
+              </a>
+              <a class="flex items-center" href="">
+                <p class="pr-[5px] h-3 w-3 border border-gray-500 text-left rounded-full mr-2 hover:bg-black"></p>
+                <p class="hover:text-[black] font-medium text-base text-[#A3A3A3]">Cash On Delivery</p>
+              </a>
+            </div>
+            <div>
+              <p class="font-normal text-base mt-8 mb-8 leading-7">
+                Your personal data will be used to support your experience
+                throughout this website, to manage access to your account, and for
+                other purposes described in our privacy policy.
+              </p>
+            </div>
+            <div class="text-center">
+              <button class="border border-yellow-500 px-24 py-2 hover:bg-[#CA8A04] hover:text-white text-[#CA8A04] font-semibold" type="submit"><p>Place order</p></button>
+            </div>
           </div>
-          <div>
-            <p class="font-normal text-base mt-8 mb-8 leading-7 font-normal">
-              Your personal data will be used to support your experience
-              throughout this website, to manage access to your account, and for
-              other purposes described in our privacy policy.
-            </p>
-          </div>
-          <div class="text-center">
-            <button class="border border-yellow-500 px-24 py-2 hover:bg-[#CA8A04] hover:text-white text-[#CA8A04] font-semibold" type="submit"><p>Place order</p></button>
-          </div>
-        </div>
-      </form>
-    </section>
+        </form>
+      </section>
+    </main>
     <footer class="bg-[#262626] text-white">
       <div
         class="container max-w-screen-xl m-auto py-16 grid grid-cols-4 gap-8"
