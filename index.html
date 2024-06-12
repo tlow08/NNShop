@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
     <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./dist/output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -13,28 +20,78 @@
   </head>
   <body>
     <header
-      class="container max-w-screen-xl m-auto flex items-center justify-between py-4"
+      class="container xl:max-w-screen-xl m-auto flex items-center justify-between py-4"
     >
-      <img src="./assets/images/logo.png" alt="" />
-      <ul class="flex gap-8 font-medium text-xl">
-        <li class="hover:text-amber-500">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="hover:text-amber-500">
-          <a href="./shop.html">Shop</a>
-        </li>
-        <li class="hover:text-amber-500">
-          <a href="./about.html">About</a>
-        </li>
-        <li class="hover:text-amber-500">
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-      <div class="flex gap-4">
-        <span class="material-symbols-outlined"> person </span>
-        <span class="material-symbols-outlined"> search </span>
-        <span class="material-symbols-outlined"> favorite </span>
-        <span class="material-symbols-outlined"> shopping_cart </span>
+      <div><img src="./assets/images/logo.png" alt="" /></div>
+      <div class="hidden sm:block">
+        <ul class="flex gap-8 font-medium text-xl">
+          <li class="hover:text-amber-500">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-amber-500">
+            <a href="./shop.html">Shop</a>
+          </li>
+          <li class="hover:text-amber-500">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="hover:text-amber-500">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hidden sm:block">
+        <div class="flex gap-4">
+          <a href="./login.html"
+            ><span class="material-symbols-outlined"> person </span></a
+          >
+          <span class="material-symbols-outlined"> search </span>
+          <span class="material-symbols-outlined"> favorite </span>
+          <span class="material-symbols-outlined"> shopping_cart </span>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle bg-yellow-500 hover:bg-yellow-600 border-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <button class="dropdown-item" type="button">
+                <a href="/index.html">Home</a>
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                <a href="/shop.html">Shop</a>
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                <a href="/about.html">About</a>
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                <a href="/contact.html">Contact</a>
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                <a href="/login.html">Login</a>
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                <a href="/cart.html">Cart</a>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- End Navigation Bar -->
@@ -43,21 +100,21 @@
         <img class="w-full" src="./assets/images/banner.jpg" alt="" />
       </section>
       <!-- End banner -->
-      <section class="container max-w-screen-xl m-auto mt-16">
+      <section class="container xl:max-w-screen-xl m-auto md:pt-16">
         <div class="flex justify-between items-center mb-4">
-          <h2 class="font-semibold text-[40px]">New Products</h2>
+          <h2 class="font-semibold md:text-[40px] sm:text-2xl">New Products</h2>
           <a
             href=""
             class="border border-solid border-yellow-500 px-4 py-2 font-semibold text-base text-yellow-500 hover:bg-yellow-600 hover:text-white"
             >View all products</a
           >
         </div>
-        <div class="grid grid-cols-4 gap-8">
-          <div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <div class="w-full">
             <div class="overflow-hidden">
               <a href="./productDetail.html">
                 <img
-                  class="hover:scale-125 duration-1000"
+                  class="w-full hover:scale-125 duration-1000"
                   src="./assets/images/product01.jpg"
                   alt=""
                 />
@@ -69,18 +126,18 @@
               <p class="font-semibold text-red-600 mb-3">2.500.000đ</p>
               <a href="./cartProduct.html">
                 <button
-                class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
-              >
-                Add to cart
-              </button>
+                  class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+                >
+                  Add to cart
+                </button>
               </a>
             </div>
           </div>
-          <div>
+          <div class="w-full">
             <div class="overflow-hidden">
               <a href="./productDetail.html">
                 <img
-                  class="hover:scale-125 duration-1000"
+                  class="w-full hover:scale-125 duration-1000"
                   src="./assets/images/product02.jpg"
                   alt=""
                 />
@@ -92,18 +149,18 @@
               <p class="font-semibold text-red-600 mb-3">2.500.000đ</p>
               <a href="./cartProduct.html">
                 <button
-                class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
-              >
-                Add to cart
-              </button>
+                  class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+                >
+                  Add to cart
+                </button>
               </a>
             </div>
           </div>
-          <div>
+          <div class="w-full">
             <div class="overflow-hidden">
               <a href="./productDetail.html">
                 <img
-                  class="hover:scale-125 duration-1000"
+                  class="w-full hover:scale-125 duration-1000"
                   src="./assets/images/product03.jpg"
                   alt=""
                 />
@@ -115,18 +172,18 @@
               <p class="font-semibold text-red-600 mb-3">2.500.000đ</p>
               <a href="./cartProduct.html">
                 <button
-                class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
-              >
-                Add to cart
-              </button>
+                  class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+                >
+                  Add to cart
+                </button>
               </a>
             </div>
           </div>
-          <div>
+          <div class="w-full">
             <div class="overflow-hidden">
               <a href="./productDetail.html">
                 <img
-                  class="hover:scale-125 duration-1000"
+                  class="w-full hover:scale-125 duration-1000"
                   src="./assets/images/product04.jpg"
                   alt=""
                 />
@@ -140,26 +197,26 @@
               <p class="font-semibold text-red-600 mb-3">4.500.000đ</p>
               <a href="./cartProduct.html">
                 <button
-                class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
-              >
-                Add to cart
-              </button>
+                  class="border border-solid border-yellow-700 text-yellow-500 w-full font-semibold text-base py-2 hover:bg-yellow-700 hover:text-white"
+                >
+                  Add to cart
+                </button>
               </a>
             </div>
           </div>
         </div>
       </section>
       <!-- End new product -->
-      <section class="container max-w-screen-xl m-auto mt-16">
+      <section class="container max-w-screen-xl m-auto md:pt-16">
         <div class="flex justify-between items-center mb-4">
-          <h2 class="font-semibold text-[40px]">Gallery</h2>
+          <h2 class="font-semibold md:text-[40px] sm:text-xl">Gallery</h2>
           <a
             href=""
             class="border border-solid border-yellow-500 px-4 py-2 font-semibold text-base text-yellow-500 hover:bg-yellow-600 hover:text-white"
             >View all gallery</a
           >
         </div>
-        <div class="grid grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
           <div class="overflow-hidden">
             <img
               class="hover:scale-125 duration-1000"
@@ -205,20 +262,20 @@
         </div>
       </section>
       <!-- End gallery -->
-      <section class="container max-w-screen-xl m-auto mt-16">
+      <section class="container max-w-screen-xl m-auto md:pt-16">
         <div class="flex justify-between items-center mb-4">
-          <h2 class="font-semibold text-[40px]">News</h2>
+          <h2 class="font-semibold md:text-[40px] sm:text-xl">News</h2>
           <a
             href=""
             class="border border-solid border-yellow-500 px-4 py-2 font-semibold text-base text-yellow-500 hover:bg-yellow-600 hover:text-white"
             >View all news</a
           >
         </div>
-        <div class="grid grid-cols-4 gap-8">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           <div>
             <div class="overflow-hidden">
               <img
-                class="hover:scale-125 duration-1000"
+                class="w-full hover:scale-125 duration-1000"
                 src="./assets/images/news01.jpg"
                 alt=""
               />
@@ -229,7 +286,7 @@
                 24/04/2024
               </p>
               <h3
-                class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+                class="w-full text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
               >
                 A bedroom must have something like this
               </h3>
@@ -246,7 +303,7 @@
           <div>
             <div class="overflow-hidden">
               <img
-                class="hover:scale-125 duration-1000"
+                class="w-full hover:scale-125 duration-1000"
                 src="./assets/images/news01.jpg"
                 alt=""
               />
@@ -257,7 +314,7 @@
                 24/04/2024
               </p>
               <h3
-                class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+                class="w-full text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
               >
                 A bedroom must have something like this
               </h3>
@@ -274,7 +331,7 @@
           <div>
             <div class="overflow-hidden">
               <img
-                class="hover:scale-125 duration-1000"
+                class="w-full hover:scale-125 duration-1000"
                 src="./assets/images/news01.jpg"
                 alt=""
               />
@@ -285,7 +342,7 @@
                 24/04/2024
               </p>
               <h3
-                class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+                class="w-full text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
               >
                 A bedroom must have something like this
               </h3>
@@ -302,7 +359,7 @@
           <div>
             <div class="overflow-hidden">
               <img
-                class="hover:scale-125 duration-1000"
+                class="w-full hover:scale-125 duration-1000"
                 src="./assets/images/news01.jpg"
                 alt=""
               />
@@ -313,7 +370,7 @@
                 24/04/2024
               </p>
               <h3
-                class="text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
+                class="w-full text-[20px] font-semibold text-left mb-3 text-ellipsis overflow-hidden"
               >
                 A bedroom must have something like this
               </h3>
@@ -332,7 +389,7 @@
       <!-- End news -->
       <section class="bg-[#FFF7ED]">
         <div
-          class="container max-w-screen-xl m-auto mt-16 py-12 grid grid-cols-4 gap-8"
+          class="container max-w-screen-xl m-auto mt-16 py-12 grid lg:grid-cols-4 md:grid-cols-2 gap-8"
         >
           <div class="flex gap-5 items-center">
             <div class="flex items-center py-[7px] pr-[10px] pb-1">
@@ -382,7 +439,7 @@
     </main>
     <footer class="bg-[#262626] text-white">
       <div
-        class="container max-w-screen-xl m-auto py-16 grid grid-cols-4 gap-8"
+        class="container max-w-screen-xl m-auto py-16 grid lg:grid-cols-4 md:grid-cols-2 gap-8"
       >
         <div>
           <img src="./assets/images/logo02.svg" alt="" />
@@ -418,5 +475,10 @@
         </p>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
